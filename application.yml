@@ -1,6 +1,4 @@
 spring:
-  config:
-    import: configserver:${CONFIG_SERVER_URL:http://localhost:9296}
   datasource:
     url: jdbc:sqlserver://${SQL_SERVER_URL:localhost}:1433;databaseName=ThrumiApplication;encrypt=false;trustServerCertificate=true
     username: ${DB_USERNAME}
