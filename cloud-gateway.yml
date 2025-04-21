@@ -18,3 +18,15 @@ resilience4j:
         baseConfig: default
       DEPARTMENT-SERVICE:
         baseConfig: default
+
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: ${POD_NAME:${spring.application.name}}
+    metadata-map:
+      k8s-namespace: ${NAMESPACE:default}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
