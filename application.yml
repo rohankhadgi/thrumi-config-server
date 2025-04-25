@@ -51,6 +51,8 @@ management:
 
 eureka:
   instance:
+    hostname: ${EUREKA_INSTANCE_HOSTNAME}
+    port: ${EUREKA_INSTANCE_PORT}
     prefer-ip-address: false
   client:
     register-with-eureka: true
