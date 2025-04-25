@@ -51,7 +51,7 @@ management:
 
 eureka:
   instance:
-    hostname: ${HOSTNAME:department-service}
+    hostname: ${HOSTNAME:department-service-svc}
     prefer-ip-address: false
   client:
     register-with-eureka: true
