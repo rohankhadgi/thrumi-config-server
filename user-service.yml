@@ -52,7 +52,7 @@ management:
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: ${HOSTNAME:user-service}
+    hostname: ${HOSTNAME:user-service-svc}
   client:
     register-with-eureka: true
     fetch-registry: true
