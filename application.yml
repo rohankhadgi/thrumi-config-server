@@ -52,7 +52,7 @@ management:
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: localhost
+    hostname: ${HOSTNAME:department-service-svc}
   client:
     register-with-eureka: true
     fetch-registry: true
