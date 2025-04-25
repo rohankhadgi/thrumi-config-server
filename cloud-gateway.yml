@@ -42,7 +42,7 @@ management:
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: localhost
+    hostname: ${HOSTNAME:cloud-gateway}
   client:
     register-with-eureka: true
     fetch-registry: true
