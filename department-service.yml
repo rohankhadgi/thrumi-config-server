@@ -51,7 +51,8 @@ management:
 
 eureka:
   instance:
-    hostname: ${HOSTNAME:department-service-svc}
+    hostname: ${EUREKA_INSTANCE_HOSTNAME:department-service-svc}
+    port: ${EUREKA_INSTANCE_PORT:80}
     prefer-ip-address: false
   client:
     register-with-eureka: true
