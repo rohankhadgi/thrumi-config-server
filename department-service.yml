@@ -51,6 +51,7 @@ management:
 
 eureka:
   instance:
+    appname: DEPARTMENT-SERVICE
     port: 80
     prefer-ip-address: false
     hostname: ${POD_NAME:${spring.application.name}}
