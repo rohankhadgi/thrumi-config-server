@@ -42,9 +42,7 @@ management:
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: ${POD_NAME:${spring.application.name}}
-    metadata-map:
-      k8s-namespace: ${NAMESPACE:default}
+    hostname: localhost
   client:
     register-with-eureka: true
     fetch-registry: true
