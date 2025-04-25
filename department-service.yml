@@ -51,8 +51,7 @@ management:
 
 eureka:
   instance:
-    hostname: localhost
-    port: 80
+    hostname: ${HOSTNAME:department-service}
     prefer-ip-address: false
   client:
     register-with-eureka: true
