@@ -51,6 +51,7 @@ management:
 
 eureka:
   instance:
+    hostname: localhost
     port: 80
     prefer-ip-address: false
   client:
