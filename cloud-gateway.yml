@@ -43,6 +43,7 @@ eureka:
   instance:
     prefer-ip-address: false
     hostname: ${HOSTNAME:cloud-gateway}
+    port: ${EUREKA_INSTANCE_PORT:80}
     non-secure-port-enabled: true
     secure-port-enabled: false  
     non-secure-port: 80
