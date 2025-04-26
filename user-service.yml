@@ -51,9 +51,12 @@ management:
 
 eureka:
   instance:
-    hostname: ${EUREKA_INSTANCE_HOSTNAME:user-service-svc}
-    port: ${EUREKA_INSTANCE_PORT:80}
     prefer-ip-address: false
+    hostname: ${HOSTNAME:cloud-gateway}
+    non-secure-port-enabled: true
+    secure-port-enabled: false  
+    non-secure-port: 80
+    secure-port: 9001
   client:
     register-with-eureka: true
     fetch-registry: true
